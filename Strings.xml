@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="messageBarTextViewDefault">Please make a move (O)!</string>
+    <string name="resetString">Reset</string>
+</resources>

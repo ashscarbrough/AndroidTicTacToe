@@ -1,0 +1,148 @@
+Activity-main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="scarbrough.tictactoe.MainActivity"
+    android:columnCount="3"
+    android:rowCount="4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/messageBarTextViewDefault"
+            android:id="@+id/messageBarTextView"
+            android:layout_weight="1"
+            android:textSize="@dimen/messageSize"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:onClick="aB1OnClick"
+            android:textSize="@dimen/xoSize" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:onClick="aB2OnClick"
+            android:textSize="@dimen/xoSize" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button3"
+            android:layout_weight="1"
+            android:onClick="aB3OnClick"
+            android:textSize="@dimen/xoSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:onClick="aB4OnClick"
+            android:textSize="@dimen/xoSize" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button5"
+            android:layout_weight="1"
+            android:onClick="aB5OnClick"
+            android:textSize="@dimen/xoSize" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button6"
+            android:layout_weight="1"
+            android:onClick="aB6OnClick"
+            android:textSize="@dimen/xoSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button7"
+            android:layout_weight="1"
+            android:onClick="aB7OnClick"
+            android:textSize="@dimen/xoSize" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button8"
+            android:layout_weight="1"
+            android:onClick="aB8OnClick"
+            android:textSize="@dimen/xoSize" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/button9"
+            android:layout_weight="1"
+            android:onClick="aB9OnClick"
+            android:textSize="@dimen/xoSize" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/resetString"
+            android:id="@+id/resetButton"
+            android:background="@android:color/holo_red_light"
+            android:textSize="@dimen/resetButtonSize"
+            android:onClick="resetBOnClick" />
+    </LinearLayout>
+
+</LinearLayout>
